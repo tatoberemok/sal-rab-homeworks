@@ -17,7 +17,7 @@ function addInCartMessage(title, price) {
     // добавьте в конец переменной message значение переменной productPrice
        message = message + productPrice;
     // добавьте в конец переменной message пробел
-       message = message + "р ";
+       message += " ";
     // добавьте в конец переменной message текст 'теперь в корзине!'
        message = message + "теперь в корзине!";
     // выведите переменную message в консоль
