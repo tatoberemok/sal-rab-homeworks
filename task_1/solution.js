@@ -11,9 +11,9 @@ function addInCartMessage(title, price) {
     // добавьте в конец переменной message пробел
     //   message += " ";
     // добавьте в конец переменной message текст 'за'
-       message = message + " за ";
+       message = message + " за";
     // добавьте в конец переменной message пробел
-    // message += " ";
+       message += " ";
     // добавьте в конец переменной message значение переменной productPrice
        message = message + productPrice;
     // добавьте в конец переменной message пробел
