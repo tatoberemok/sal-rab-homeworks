@@ -6,7 +6,7 @@ function calcShipping(sum, min, shipping) {
     // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingSum
-    let shippingSum
+    let shippingSum = 200
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
     if (productsSum = 0) {shippingSum = 0}
