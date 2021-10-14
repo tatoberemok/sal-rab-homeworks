@@ -9,8 +9,9 @@ function parseProducts(json) {
     let data = JSON.parse(json);
     // Верните как результат функции свойство products объекта data
     let products = data.products;
-    }
- return 
+    return
+}
+  
 
 // Напишите функцию renderProductsCards(json)
 function renderProductsCards(json){
