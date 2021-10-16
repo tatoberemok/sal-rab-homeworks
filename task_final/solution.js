@@ -44,7 +44,7 @@ function sendRequest(name, phone, address, goods, sum) {
     }
     
     order.address.toString();
-    address = {street, house, entrance, floor, flat};
+    address = {street:street, house:house, entrance:entrance, floor:floor, flat:flat};
     let address1 ="";
     address1 += "ул. " + address.street + "," + "дом" + address.house + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.flat;
     data.order.address = address1;
