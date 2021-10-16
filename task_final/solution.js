@@ -42,13 +42,13 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
         data.goods.push(goods[i].count);
     }
-    data.order.address = JSON.stringify({address});
+    data.order.address = JSON.stringify({order.address});
  // order.address  = {str, dom, entrance, floor, quart};
  // order.address = "ул. " + address.str + " " + ",дом" + address.dom + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.quart;
  // data.order.address = address;
     data.order.sum = order.sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
-    data.order = "Address:" + data.order.address + "Sum:" + data.order.sum;
+    data.order = "address:" + data.order.address + "sum:" + data.order.sum;
        
     let jsonData = JSON.stringify({data});
     console.log(jsonData);
