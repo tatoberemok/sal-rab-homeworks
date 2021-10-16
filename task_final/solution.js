@@ -42,7 +42,8 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
         data.goods.push(goods[i].count);
     }
-    let order = JSON.stringify(address);
+    let order = {address, sum};
+    let jsonAddress = JSON.stringify(address);
  // data.order.address.toString();
     data.order.address = address;
     data.order.sum = sum;
