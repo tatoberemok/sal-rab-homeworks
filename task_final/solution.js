@@ -44,7 +44,6 @@ function sendRequest(name, phone, address, goods, sum) {
     }
    
     data.order.address = address;
-    address.toString();
     data.order.sum = sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
        
