@@ -42,7 +42,6 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
         data.goods.push(goods[i].count);
     }
- // address = JSON.stringify({address});
      
  // order.address  = {str, dom, entrance, floor, quart};
  // order.address = "ул. " + address.str + " " + ",дом" + address.dom + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.quart;
