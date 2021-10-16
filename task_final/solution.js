@@ -41,6 +41,7 @@ function sendRequest(name, phone, address, goods, sum) {
     for (let i = 0; i < countOfGoods; i += 1) {
         data.goods.push(goods[i].title);
     }
+    console.log('sum' in order);
     data.order.address = order['address'];
     data.order.sum = order['sum'];
     data.client = sendRequest(name) + " " + sendRequest(phone);
