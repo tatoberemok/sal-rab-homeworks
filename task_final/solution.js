@@ -45,7 +45,7 @@ function sendRequest(name, phone, address, goods, sum) {
    
 //  data.order.address = address;
     address.toString();
-    let address = { str: str, dom: dom, entrance: entrance, floor: floor; quart : quart };
+    let address = { str: str, dom: dom, entrance: entrance, floor:floor; quart: quart };
     address = "ул. " + address.str + " " + ",дом" + address.dom + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.quart;
 
     data.order.sum = sum;
