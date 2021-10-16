@@ -42,10 +42,10 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title,goods[i].count);
    //data.goods.push(goods[i].count);
     }
-    console.log('sum' in order);
-    data.order.address = sendRequest(order.address);
-    data.order.sum = sendRequest(order.sum);
+    data.order.address = order.address;
+    data.order.sum = order.sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
+    data.order = data.order.address + data.order.sum;
         
     let jsonData = JSON.stringify({data});
     console.log(jsonData);
