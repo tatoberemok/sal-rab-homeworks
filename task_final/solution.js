@@ -42,9 +42,9 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].title);
         data.goods.push(goods[i].count);
     }
-   
-    data.order.address = address;
+    
     address.toString();
+    data.order.address = address;
     address = { str:str, dom:dom, entrance:entrance, floor:floor, quart:quart};
     address = "ул. " + address.str + " ," + "дом" + address.dom + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.quart;
 
