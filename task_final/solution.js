@@ -43,10 +43,10 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].count);
     }
     
-    order.address.toString();
+    order = order.address + order.sum;
+    address.toString();
     order.address = {street:street, house:house, entrance:entrance, floor:floor, flat:flat};
-    let address1 ="";
-    address1 += "ул. " + address.street + "," + "дом" + address.house + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.flat;
+    address += "ул. " + address.street + "," + "дом" + address.house + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.flat;
     data.order.address = address1;
     data.order.sum = sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
