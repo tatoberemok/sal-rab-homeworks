@@ -45,12 +45,16 @@ function sendRequest(name, phone, address, goods, sum) {
     
     let order = order.address + order.sum;
     address.toString();
-    order.address = {street:street, house:house, entrance:entrance, floor:floor, flat:flat};
-    address += "ул. " + address.street + "," + "дом" + address.house + " " + "," + address.entrance + ",подъезд" + " " + address.floor + " ,кв" + address.flat;
-    data.order.address = address1;
+    let address = {street:street, house:house, entrance:entrance, floor:floor, flat:flat};
+    address += "ул. " + address.street;
+    address += "," + "дом" + address.house;
+    address += " ," + address.entrance + ",подъезд"; 
+    address += " " + address.floor;
+    address += " ,кв" + address.flat;
+    data.order.address = address;
     data.order.sum = sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
-    data.order = data.order.address + data.order.sum;
+    data.order = order.address + order.sum;
        
     let jsonData = JSON.stringify({data});
     console.log(jsonData);
