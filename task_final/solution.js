@@ -43,8 +43,6 @@ function sendRequest(name, phone, address, goods, sum) {
     }
     
 
-//  address.toString();
-    let order = {address: {street, house, entrance, floor, flat}, sum};
 //  let street = address.street;
     address = "";
     address += "ул. " + address.street;
@@ -56,7 +54,7 @@ function sendRequest(name, phone, address, goods, sum) {
     console.log(address);
     data.order.sum = sum;
 //  data.order = order.address + order.sum;
-    data.client = sendRequest(name) + " " + sendRequest(phone);
+    data.client = name + " " + phone;
     
        
     let jsonData = JSON.stringify({data});
