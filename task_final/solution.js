@@ -42,7 +42,7 @@ function sendRequest(name, phone, address, goods, sum) {
        
     }
    
-    data.order.address = `ул. ${street}`;
+    data.order.address = `ул. ${2+2}`;
     console.log(data.order.address);
     data.order.sum = sum;
 
