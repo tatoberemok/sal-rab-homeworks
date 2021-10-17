@@ -46,6 +46,6 @@ function sendRequest(name, phone, address, goods, sum) {
     data.client = name + " " + phone;
     
     let jsonData = JSON.stringify({data});
-    console.log(jsonData);
+ // console.log(jsonData);
     return jsonData;
 }
