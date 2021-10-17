@@ -43,7 +43,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i].count);
     }
     
-    let order = order.address + order.sum;
+//  let order = order.address + order.sum;
     address.toString();
     let address = {street:street, house:house, entrance:entrance, floor:floor, flat:flat};
     address += "ул. " + address.street;
