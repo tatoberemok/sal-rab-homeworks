@@ -41,8 +41,8 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(ttGoods[i]);
        
     }
-    
-    data.order.address = `ул. ${address}`дом ${address} , ${address} ,подъезд ${address} ,кв ${address}`;
+   
+    data.order.address = `ул. ${address.street}`дом `${address.house}` , `${address.entrance}` ,подъезд `${address.floor}` ,кв `${address/flat}`;
     console.log(data.order.address);
     data.order.sum = sum;
 
