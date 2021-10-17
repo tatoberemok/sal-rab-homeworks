@@ -53,6 +53,7 @@ function sendRequest(name, phone, address, goods, sum) {
     address += " " + address.floor;
     address += " ,кв" + address.flat;
     data.order.address = address;
+    console.log(address);
     data.order.sum = sum;
 //  data.order = order.address + order.sum;
     data.client = sendRequest(name) + " " + sendRequest(phone);
