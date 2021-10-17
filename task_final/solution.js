@@ -43,8 +43,8 @@ function sendRequest(name, phone, address, goods, sum) {
     
     data.order.address = `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв ${address.flat}`;
     console.log(data.order.address);
-    data.order.sum = sum;
-    data.client = name + " " + phone;
+    data.order.sum = order.sum;
+    data.client = client.name + " " + client.phone;
     
  //  let jsonData = JSON.stringify({data});
  //  console.log(jsonData);
